@@ -19,8 +19,7 @@ export class AppComponent implements OnInit {
   }
 
   selectProduct(e: any) {
-    const result = this.products.find(item => item.ProductDescription === e.target.textContent);
-    this.selectedProduct = result;
+    this.selectedProduct = this.products.find(item => item.ProductDescription === e.target.textContent);
   }
 
   closeSelectedProduct() {
